@@ -56,8 +56,7 @@ class _ProductDetailsState extends State<ProductDetails> {
               ),
             ),
              const Gap(15),
-            Text(
-              widget.productPrice!,
+             Text('\$ ${widget.productPrice}',
               style: const TextStyle(
                 fontSize: 16,
                 fontWeight: FontWeight.bold,

@@ -1,7 +1,6 @@
 import 'package:fake_ecommers_application/service/product.dart';
 import 'package:fake_ecommers_application/widget/product_details.dart';
 import 'package:fake_ecommers_application/widget/products.dart';
-import 'package:fake_ecommers_application/widget/products_scren.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
@@ -31,6 +30,7 @@ class MyHomePage extends StatelessWidget {
             } else if (snapshot.hasError) {
               return Text('Error: ${snapshot.error}');
             } else {
+              
               List<Map<String, dynamic>> products = snapshot.data!;
               // Extract unique categories
               List<String> uniqueCategories = products
